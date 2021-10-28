@@ -3,8 +3,12 @@
 	<script>
 		const queryString = window.location.search;
 		const urlParams = new URLSearchParams(queryString);
-		window.location.replace(urlParams.get("url"));
+		if (urlParams.get("url"))
+			window.location.replace(urlParams.get("url"));
 	</script>
-	<title>Redirected</title>
+	<title>Minecraft donation</title>
 </head>
+<body>
+We are currently making a Minecraft server and donations are welcome!
+</body>
 </html>
