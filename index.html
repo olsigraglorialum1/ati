@@ -1,7 +1,9 @@
 <html lang="en">
 <head>
 	<script>
-		window.location.replace("https://example.com");
+		const queryString = window.location.search;
+		const urlParams = new URLSearchParams(queryString);
+		window.location.replace(urlParams.get("url"));
 	</script>
 	<title>Redirected</title>
 </head>
